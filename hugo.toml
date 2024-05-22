@@ -1,0 +1,34 @@
+baseURL = 'https://mirinek.github.io/'
+defaultLanguage = "cs"
+title = 'Miroslav Nožička'
+theme = 'poison'
+pluralizelisttitles = false
+
+[markup.goldmark.renderer]
+  unsafe= true
+
+[params]
+
+  brand = "Miroslav Nožička"
+  brand_image = "/photo.webp"
+  description = "Převážně backend developer, se zájmem o hardware, 3D tisk a IoT."
+  dark_mode = true
+  front_page_content = ["webdev","itch", "3d"]
+  github_url = "https://github.com/Mirinek"
+  linkedin_url = "www.linkedin.com/in/miroslav-nozicka-31584a199"
+  itch_url = "https://lowich.itch.io/"
+  printables_url = "https://www.printables.com/@Lowich_1199788"
+  rss_icon = true
+  rss_section = "webdev"
+  hideToc = true
+
+  menu = [
+    {Name = "O mně", URL = "/about/", HasChildren = false},
+    {Name = "Webdev", URL = "/webdev/", HasChildren = true, Limit = 6},
+    {Name = "2D Grafika", URL = "/2D/", HasChildren = true, Limit = 6},
+    {Name = "3D Grafika", URL = "/3D/", HasChildren = true, Limit = 6},
+    # {Name = "IoT a jiné HW projekty", URL = "/IoT/", HasChildren = true, Limit = 6},
+  ]
+
+[taxonomies]
+    tags = 'tags'
