@@ -25,8 +25,8 @@ publishDir = "docs"
   menu = [
     {Name = "O mně", URL = "/about/", HasChildren = false},
     {Name = "Webdev", URL = "/webdev/", HasChildren = true, Limit = 6},
-    {Name = "2D Grafika", URL = "/2D/", HasChildren = true, Limit = 6},
-    {Name = "3D Grafika", URL = "/3D/", HasChildren = true, Limit = 6},
+    {Name = "2D Grafika", URL = "/2d/", HasChildren = true, Limit = 6},
+    {Name = "3D Grafika", URL = "/3d/", HasChildren = true, Limit = 6},
     # {Name = "IoT a jiné HW projekty", URL = "/IoT/", HasChildren = true, Limit = 6},
   ]
 
