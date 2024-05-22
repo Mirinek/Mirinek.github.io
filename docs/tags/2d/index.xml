@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2D on Miroslav Nožička</title>
+    <link>https://mirinek.github.io/tags/2d/</link>
+    <description>Recent content in 2D on Miroslav Nožička</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mirinek.github.io/tags/2d/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pixel art</title>
+      <link>https://mirinek.github.io/2d/pixel_art/</link>
+      <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/2d/pixel_art/</guid>
+      <description>Spaceship asset pack Asset pack obsahující 9 16x16 lodí.&#xA;Spaceship sprites by Lowich Platformer assetpack Asset pack pro 2D skákačku, obsahuje animovanou postavu, pozadí, stavební bloky a další menší dekorace.&#xA;Slime platformer tileset by Lowich </description>
+    </item>
+  </channel>
+</rss>

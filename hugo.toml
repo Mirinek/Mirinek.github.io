@@ -3,7 +3,7 @@ defaultLanguage = "cs"
 title = 'Miroslav Nožička'
 theme = 'poison'
 pluralizelisttitles = false
-
+publishDir = "docs"
 [markup.goldmark.renderer]
   unsafe= true
 

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Miroslav Nožička</title>
+    <link>https://mirinek.github.io/tags/</link>
+    <description>Recent content in Tags on Miroslav Nožička</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mirinek.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2D</title>
+      <link>https://mirinek.github.io/tags/2d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/2d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>3D</title>
+      <link>https://mirinek.github.io/tags/3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/3d/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blender</title>
+      <link>https://mirinek.github.io/tags/blender/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/blender/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gamedev</title>
+      <link>https://mirinek.github.io/tags/gamedev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/gamedev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Grafika</title>
+      <link>https://mirinek.github.io/tags/grafika/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/grafika/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tabletop</title>
+      <link>https://mirinek.github.io/tags/tabletop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/tabletop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://mirinek.github.io/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Javascript</title>
+      <link>https://mirinek.github.io/tags/javascript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Webdev</title>
+      <link>https://mirinek.github.io/tags/webdev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mirinek.github.io/tags/webdev/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
