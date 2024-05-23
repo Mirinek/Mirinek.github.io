@@ -3,7 +3,6 @@ title: "Pixel art"
 tags: ["gamedev", "2D", "grafika"]
 date: 2024-03-30
 description: "Pixel art, převážně assety pro vývoj her."
-layout: itch
 ---
 ## Spaceship asset pack
 Asset pack obsahující 9 16x16 lodí. 

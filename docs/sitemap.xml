@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://mirinek.github.io/tags/hugo/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/tags/javascript/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/webdev/quickcards/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/tags/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/webdev/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mirinek.github.io/tags/webdev/</loc>
+    <lastmod>2024-05-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mirinek.github.io/tags/2d/</loc>
     <lastmod>2024-03-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,9 +44,6 @@
     <loc>https://mirinek.github.io/tags/grafika/</loc>
     <lastmod>2024-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mirinek.github.io/</loc>
-    <lastmod>2024-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mirinek.github.io/3d/spare_parts/</loc>
     <lastmod>2024-03-30T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,25 +53,11 @@
     <loc>https://mirinek.github.io/tags/tabletop/</loc>
     <lastmod>2024-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mirinek.github.io/tags/</loc>
-    <lastmod>2024-03-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://mirinek.github.io/3d/vase_mode_cards/</loc>
-    <lastmod>2024-03-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mirinek.github.io/webdev/</loc>
     <lastmod>2024-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mirinek.github.io/about/</loc>
   </url><url>
-    <loc>https://mirinek.github.io/tags/hugo/</loc>
-  </url><url>
-    <loc>https://mirinek.github.io/tags/javascript/</loc>
-  </url><url>
     <loc>https://mirinek.github.io/about/about/</loc>
-  </url><url>
-    <loc>https://mirinek.github.io/webdev/quickcards/</loc>
-  </url><url>
-    <loc>https://mirinek.github.io/tags/webdev/</loc>
   </url>
 </urlset>

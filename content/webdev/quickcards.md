@@ -1,7 +1,7 @@
 ---
 title: "Quickcards"
 tags: ["javascript", "webdev", "Hugo"]
-date: 2024-22-05
+date: 2024-05-22
 description: "Online studijní nástroj k tvorbě vlastních testů."
 ---
 Nástroj, který jsem vytvořil během studování akronymů na CompTIA Security+ certifikaci.
