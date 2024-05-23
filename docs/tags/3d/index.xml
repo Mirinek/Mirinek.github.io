@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3D on Miroslav Nožička</title>
-    <link>https://mirinek.github.io/tags/3d/</link>
+    <link>https://nozickami.cz/tags/3d/</link>
     <description>Recent content in 3D on Miroslav Nožička</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mirinek.github.io/tags/3d/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nozickami.cz/tags/3d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Náhradní díly</title>
-      <link>https://mirinek.github.io/3d/spare_parts/</link>
+      <link>https://nozickami.cz/3d/spare_parts/</link>
       <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://mirinek.github.io/3d/spare_parts/</guid>
+      <guid>https://nozickami.cz/3d/spare_parts/</guid>
       <description> Volkswagen Touareg náhradní spínač Model náhradního spínače pro ovládání zrcátek. Model na printables: https://www.printables.com/cs/model/587269-volkswagen-touareg-replacement-dial </description>
     </item>
     <item>
       <title>Vase/Spiral mode karetní krabičky</title>
-      <link>https://mirinek.github.io/3d/vase_mode_cards/</link>
+      <link>https://nozickami.cz/3d/vase_mode_cards/</link>
       <pubDate>Sat, 30 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://mirinek.github.io/3d/vase_mode_cards/</guid>
+      <guid>https://nozickami.cz/3d/vase_mode_cards/</guid>
       <description> Seznam alternativních krabiček pro karetní/stolní hry. Z pravidla se jedná o skladnější(přenosnější) alternativy k originálním obalům.&#xA;Výbušná koťátka Dvoudílná krabička pro výbušná koťátka, tisknutelné ve &amp;ldquo;vase mode&amp;rdquo;, obsahuje přihrádky pro všechna rozšíření. Model na printables: https://www.printables.com/cs/model/582577-exploding-kittens-case Monopoly Deal Dvoudílná krabička pro Monopoly Deal. Model na Printables: https://www.printables.com/cs/model/573207-monopoly-deal-cards-case </description>
     </item>
   </channel>
