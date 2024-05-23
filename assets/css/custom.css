@@ -2,3 +2,6 @@
   font-size: 1.4em;
   font-family: "Monaco", monospace;
 }
+.sidebar-about img {
+  border-radius: 5%;
+}
