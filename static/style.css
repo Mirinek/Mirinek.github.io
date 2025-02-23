@@ -262,6 +262,25 @@ td {
     padding: 0.5rem 1rem;
 }
 
+/* make nav work in phones, split into more lines if content does not fit */
+nav {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+nav>a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+@media screen and (min-width: 480px) {
 nav {
     display: flex;
     justify-content: space-between;
@@ -279,10 +298,11 @@ nav>a {
     text-decoration: none;
     font-size: larger;
 }
-
 .two-cols {
     display: flex;
 }
 .two-cols>* {
     flex: 1;
+}
+    
 }

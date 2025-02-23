@@ -1,5 +1,5 @@
 <article>
-	<section style="display: block;margin: auto; width: 50%;">
+	<section style="display: block;margin: auto; width: 60%;">
 		<h2 id="contact">Kontakt</h2>
 		<ul>
 			<li><b>Miroslav Nožička</b></li>
