@@ -1,0 +1,288 @@
+:root {
+    --blue: #87CEEB;
+    --green: #90EE90;
+    --yellow: #F4D738;
+    --orange: #FF7A5C;
+    --pink: #FFB2EF;
+    --purple: #A388EE;
+
+    --light-blue: #DAF5F0;
+    --light-green: #DDF5DA;
+    --light-yellow: #FDFD96;
+    --light-orange: #F8D6B3;
+    --light-pink: #FCDFFF;
+    --light-purple: #E3DFF2;
+
+    --accent-color: var(--orange);
+    --background-color: var(--light-green);
+}
+
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-family: 'Public Sans';
+    line-height: 1.4;
+    font-size: large;
+    font-weight: 500;
+    color: black;
+    background: var(--background-color);
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kanit';
+}
+
+.bordered, article, section, header, footer {
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+    padding: 1rem;
+    background-color: var(--light-yellow);
+}
+section, nav {
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: var(--light-orange);
+}
+
+/* button */
+button,
+input[type=submit],
+input[type=button] {
+    font-family: 'Public Sans';
+    font-weight: bold;
+    font-size: large;
+
+    padding: 15px 30px;
+    margin: 10px 0px;
+    background-color: var(--accent-color);
+
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+
+    transition: box-shadow linear .1s;
+
+    outline: none;
+}
+
+
+button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+button:focus,
+input[type=submit]:focus {
+    box-shadow: 0px 0px black;
+}
+
+button:active,
+input[type=submit]:active,
+input[type=button]:active {
+    filter: brightness(90%);
+}
+
+/* anchor */
+a {
+    color: black;
+    font-weight: bolder;
+}
+
+a:focus {
+    outline: none;
+    border-bottom: none;
+}
+
+/* general  */
+hr {
+    background-color: black;
+    border: 0px;
+    height: 0.25rem;
+}
+
+img {
+    max-width: 560px;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+ul {
+    list-style-type: square
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+blockquote {
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+    font-weight: bold;
+    font-size: large;
+    background: white;
+    margin: auto 0px;
+    padding: 1px 2px;
+}
+
+iframe {
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+/* forms */
+form {
+    display: inline-block;
+    width: 100%;
+}
+
+fieldset {
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+fieldset legend {
+    font-size: large;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: large;
+}
+
+input {
+    cursor: pointer;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+select,
+textarea {
+    height: 3rem;
+    margin: 10px 0px;
+    width: calc(100% - 10px);
+    margin: 20px auto;
+
+    box-sizing: inherit;
+
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+    outline: none;
+
+    font-family: 'Public Sans';
+    font-size: large;
+
+    transition: box-shadow linear .1s;
+}
+
+input:not([type]):focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=checkbox]:focus:before,
+select:focus,
+textarea:focus {
+    box-shadow: 0px 0px var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+textarea {
+    resize: vertical
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    outline: none;
+    content: none;
+    width: 2rem;
+    height: 2rem;
+
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+input[type=checkbox]:before {
+    content: "x";
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: transparent !important;
+    background: white;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+
+    transition: box-shadow linear .1s;
+}
+
+input[type=checkbox]:checked:before {
+    color: black !important;
+}
+
+input[type=color] {
+    background-color: black;
+    transition: background-color linear .1s;
+    border: none;
+    outline: none;
+}
+
+input[type=color]:focus {
+    background-color: var(--accent-color);
+}
+
+/* tables */
+
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+th {
+    font-weight: bold;
+}
+
+table,
+th,
+td {
+    border: 0.25rem solid black;
+}
+
+th,
+td {
+    padding: 0.5rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 0;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 0.25rem solid black;
+    box-shadow: 0.25rem 0.25rem black;
+}
+
+nav>a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.two-cols {
+    display: flex;
+}
+.two-cols>* {
+    flex: 1;
+}
