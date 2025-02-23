@@ -39,13 +39,19 @@ h6 {
     font-family: 'Kanit';
 }
 
-.bordered, article, section, header, footer {
+.bordered,
+article,
+section,
+header,
+footer {
     border: 0.25rem solid black;
     box-shadow: 0.25rem 0.25rem black;
     padding: 1rem;
     background-color: var(--light-yellow);
 }
-section, nav {
+
+section,
+nav {
     border-radius: 1rem;
     margin: 1rem;
     background-color: var(--light-orange);
@@ -269,7 +275,6 @@ nav {
     padding: 1rem;
     margin: 0;
     color: white;
-    font-size: large;
     font-weight: bold;
     border: 0.25rem solid black;
     box-shadow: 0.25rem 0.25rem black;
@@ -277,32 +282,34 @@ nav {
 
 nav>a {
     text-decoration: none;
-    font-size: larger;
+    font-size: large;
 }
 
 @media screen and (min-width: 480px) {
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    margin: 0;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    border: 0.25rem solid black;
-    box-shadow: 0.25rem 0.25rem black;
-}
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        margin: 0;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        border: 0.25rem solid black;
+        box-shadow: 0.25rem 0.25rem black;
+    }
 
-nav>a {
-    text-decoration: none;
-    font-size: larger;
-}
-.two-cols {
-    display: flex;
-}
-.two-cols>* {
-    flex: 1;
-}
-    
+    nav>a {
+        text-decoration: none;
+        font-size: larger;
+    }
+
+    .two-cols {
+        display: flex;
+    }
+
+    .two-cols>* {
+        flex: 1;
+    }
+
 }
