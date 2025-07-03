@@ -1,15 +1,64 @@
+<script lang="ts">
+	import ActionWindow from '$lib/ActionWindow.svelte';
+	import TaskBar from '$lib/TaskBar.svelte';
+	import Icon from '$lib/Icon.svelte';
+
+	let content = [
+		{
+			id: 'contact',
+			title: 'Kontakt',
+			text: `Miroslav Nožička`,
+			ico: '📧',
+			dskIco: '/images/Blue.png'
+		},
+		{
+			id: 'projects',
+			title: 'Projekty',
+			text: `Seznam projektů, které jsem vytvořil ve volném čase.`,
+			ico: '📂',
+			dskIco: '/images/brown.png'
+		},
+		{
+			id: 'experience',
+			title: 'Zkušenosti',
+			text: `Zkušenosti z práce a školení.`,
+			ico: '💼',
+			dskIco: '/images/Gray1.png'
+		},
+		{
+			id: 'certs',
+			title: 'Certifikace',
+			text: `<h1>Certifikace, které jsem získal.</h1>`,
+			ico: '📜',
+			dskIco: '/images/Gray2.png'
+		}
+	];
+</script>
+
+{#each content as item}
+	<Icon src={item.dskIco} alt={item.title} title={item.title} windowId={item.id}></Icon>
+{/each}
+
+{#each content as item}
+	<ActionWindow title={item.ico + item.title} id={item.id}>{item.text}</ActionWindow>
+{/each}
+
+<TaskBar apps={content.map(item => item.title)}></TaskBar>
+<!--
 <article>
-	<section style="display: block;margin: auto; width: 65%;">
-		<h2 id="contact">Kontakt</h2>
-		<ul>
-			<li><b>Miroslav Nožička</b></li>
-			<li>IČO: 14404826, neplátce DPH</li>
-			<li>email: miroslav.nozicka@outlook.com</li>
-			<li>Sídlo: Hornická 35, Staré Město 78832</li>
-			<li>Podnikatel vedený u Živnostenského úřadu v Šumperku</li>
-		</ul>
-		<img width="80%" src="/images/port.jpg" alt="Portrait" />
-	</section>
+	<Draggable>
+		<section style="display: block;margin: auto; width: 65%;">
+			<h2 id="contact">Kontakt</h2>
+			<ul>
+				<li><b>Miroslav Nožička</b></li>
+				<li>IČO: 14404826, neplátce DPH</li>
+				<li>email: miroslav.nozicka@outlook.com</li>
+				<li>Sídlo: Hornická 35, Staré Město 78832</li>
+				<li>Podnikatel vedený u Živnostenského úřadu v Šumperku</li>
+			</ul>
+			<img width="80%" src="/images/port.jpg" alt="Portrait" />
+		</section>
+	</Draggable>
 	<section>
 		<h2 id="projects">Projekty</h2>
 		<p>Seznam projektů, které jsem vytvořil ve volném čase.</p>
@@ -44,33 +93,39 @@
 			<ul class="two-cols">
 				<li>
 					<a href="https://lowich.itch.io/slime-platformer-tileset">Platformer asset pack</a>
-					<iframe
-						title="Platformer"
-						frameborder="0"
-						src="https://itch.io/embed/2007821"
-						width="90%"
-						height="167"
-						><a href="https://lowich.itch.io/slime-platformer-tileset"
-							>Slime platformer tileset by Lowich</a
-						></iframe
-					>
+					<Draggable>
+						<iframe
+							title="Platformer"
+							frameborder="0"
+							src="https://itch.io/embed/2007821"
+							width="90%"
+							height="167"
+							><a href="https://lowich.itch.io/slime-platformer-tileset"
+								>Slime platformer tileset by Lowich</a
+							></iframe
+						>
+					</Draggable>
 				</li>
 				<li>
 					<a href="https://lowich.itch.io/free-spaceship-sprites">Shoot'em up asset pack</a>
-					<iframe
-						title="Space ships"
-						frameborder="0"
-						src="https://itch.io/embed/1839661"
-						width="90%"
-						height="167"
-						><a href="https://lowich.itch.io/free-spaceship-sprites">Spaceship sprites by Lowich</a
-						></iframe
+					<Draggable>
+						<iframe
+							title="Space ships"
+							frameborder="0"
+							src="https://itch.io/embed/1839661"
+							width="90%"
+							height="167"
+							><a href="https://lowich.itch.io/free-spaceship-sprites"
+								>Spaceship sprites by Lowich</a
+							></iframe
+						></Draggable
 					>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<div class="two-cols">
+		<Draggable>
 		<section>
 			<h2 id="experience">Zkušenosti</h2>
 			<h3>Golang developer: <a href="https://www.mall.cz/">Mall.cz</a></h3>
@@ -91,7 +146,9 @@
 				<li>Konfigurace a údržba serveru pro interní služby</li>
 			</ul>
 		</section>
+		</Draggable>
 		<div>
+			<Draggable>
 			<section>
 				<h2 id="certs">Certifikace</h2>
 				<ul>
@@ -112,6 +169,8 @@
 					</li>
 				</ul>
 			</section>
+			</Draggable>
+			<Draggable>
 			<section>
 				<h2 id="tech">Technologie a nástroje</h2>
 				<ul>
@@ -122,6 +181,7 @@
 					<li>Ostatní: Linux, Git, RabbitMQ, GraphQL</li>
 				</ul>
 			</section>
+			</Draggable>
 		</div>
 	</div>
-</article>
+</article>-->
