@@ -43,7 +43,7 @@
 	<ActionWindow title={item.ico + item.title} id={item.id}>{item.text}</ActionWindow>
 {/each}
 
-<TaskBar apps={content.map(item => item.title)}></TaskBar>
+<TaskBar apps={content}></TaskBar>
 <!--
 <article>
 	<Draggable>

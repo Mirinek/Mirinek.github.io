@@ -256,6 +256,37 @@ article:has(#active-window) {
     margin-right: 0.5rem;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.minimized-apps {
+    margin-left: 5rem;
+}
+
+.minimized-button {
+    font-weight: bold;
+    height: 2.5rem;
+    width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.25rem;
+    margin-left: 0.25rem;
+    border: 0.25rem solid #B6B6B6;
+    background-color: #B6B6B6;
+    cursor: pointer;
+}
+
+.minimized-button-closed {
+    background-color: #D3D3D3;
+    border-top: 0.25rem solid #DDD;
+    border-left: 0.25rem solid #DDD;
+    border-bottom: 0.25rem solid #B6B6B6;
+    border-right: 0.25rem solid #B6B6B6;
+}
+
 .hidden {
     display: none;
 }

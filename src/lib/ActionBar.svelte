@@ -11,6 +11,10 @@
 		} else {
 			rootElem.style.animation = 'minimize 0.25s 1 normal backwards';
 		}
+		let minimizedButton = document.getElementById('minimized-' + event.target?.closest('article')?.id);
+		if (minimizedButton) {
+			minimizedButton.classList.add('minimized-button-closed');
+		}
 
 	}
 
@@ -20,6 +24,10 @@
 
 	function close(event: MouseEvent) {
         event.target?.closest('article')?.classList.toggle('closed-window');
+		let minimizedButton = document.getElementById('minimized-' + event.target?.closest('article')?.id);
+		if (minimizedButton) {
+			minimizedButton.classList.add('hidden');
+		}
 	}
 
 </script>

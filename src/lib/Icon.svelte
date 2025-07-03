@@ -12,6 +12,11 @@
 			targetWindow.classList.remove('minimized-window');
 			targetWindow.style = 'left: 0; top: 0;';
 		}
+		let minimizedButton = document.getElementById('minimized-' + windowId);
+		if (minimizedButton) {
+			minimizedButton.classList.remove('hidden');
+			minimizedButton.classList.remove('minimized-button-closed');
+		}
 	}
 </script>
 
