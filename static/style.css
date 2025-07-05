@@ -274,17 +274,21 @@ footer {
     text-overflow: ellipsis;
     padding: 0.25rem;
     margin-left: 0.25rem;
-    border: 0.25rem solid #B6B6B6;
-    background-color: #B6B6B6;
+    border-top: 0.25rem solid #B6B6B6;
+    border-left: 0.25rem solid #B6B6B6;
+    border-bottom: 0.25rem solid #DDD;
+    border-right: 0.25rem solid #DDD;
+    background: repeating-conic-gradient(#DDD 0 25%, #B6B6B6 0 50%) 50% / 0.25rem 0.25rem;
     cursor: pointer;
 }
 
 .minimized-button-closed {
-    background-color: #D3D3D3;
+    background: none;
     border-top: 0.25rem solid #DDD;
     border-left: 0.25rem solid #DDD;
     border-bottom: 0.25rem solid #B6B6B6;
     border-right: 0.25rem solid #B6B6B6;
+    background-color: #D3D3D3;
 }
 
 .hidden {
