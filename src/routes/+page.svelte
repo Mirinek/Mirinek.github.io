@@ -3,7 +3,7 @@
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
 	import SysMenu from '$lib/sysMenu.svelte';
-	import { locale} from 'svelte-i18n';
+	import { locale } from 'svelte-i18n';
 
 	let content = [
 		{

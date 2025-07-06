@@ -1,19 +1,23 @@
 <script lang="ts">
 	function reboot() {
-        if (!confirm("Are you sure you want to reset the system?")) {
-            return;
-        }
+		if (!confirm('Are you sure you want to reset the system?')) {
+			return;
+		}
 		window.location.reload();
 	}
 	function exit() {
-        if (!confirm("Are you sure you want to exit?")) {
-            return;
-        }
-  		window.history.back();
+		if (!confirm('Are you sure you want to exit?')) {
+			return;
+		}
+		window.history.back();
+	}
+	function openGtihub() {
+		window.open('https://github.com/Mirinek/Mirinek.github.io', '_blank');
 	}
 </script>
 
 <div id="sys-menu" class="hidden">
-	<button on:click={reboot}>Reset</button>
-	<button on:click={exit}>Exit</button>
+	<button on:click={openGtihub}>i</button>
+	<button on:click={reboot}>↻</button>
+	<button on:click={exit}>⏼</button>
 </div>
