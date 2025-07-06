@@ -2,6 +2,7 @@
 	import ActionWindow from '$lib/ActionWindow.svelte';
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
+	import { locale} from 'svelte-i18n';
 
 	let content = [
 		{

@@ -20,7 +20,7 @@
 	}
 </script>
 
-<div class="icon-element" role="button" tabindex="0" on:dblclick={spawnWindow}>
+<div class="icon-element" role="button" tabindex="0" on:dblclick={spawnWindow} on:touchend={spawnWindow}>
 	<img class="icon-image" {src} {alt} />
 	<h3>{title}</h3>
 </div>
