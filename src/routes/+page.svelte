@@ -2,6 +2,7 @@
 	import ActionWindow from '$lib/ActionWindow.svelte';
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
+	import SysMenu from '$lib/sysMenu.svelte';
 	import { locale} from 'svelte-i18n';
 
 	let content = [
@@ -43,7 +44,7 @@
 {#each content as item}
 	<ActionWindow title={item.ico + item.title} id={item.id}>{item.text}</ActionWindow>
 {/each}
-
+<SysMenu></SysMenu>
 <TaskBar apps={content}></TaskBar>
 <!--
 <article>

@@ -3,6 +3,13 @@
 	let currentTime = $state(
 		new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
 	);
+
+	function toggleSysMenu() {
+		const sysMenu = document.getElementById('sys-menu');
+		if (sysMenu) {
+			sysMenu.classList.toggle('hidden');
+		}
+	}
 	function swapLanguage() {
 		const langButton = document.getElementById('lang');
 		if (langButton) {
@@ -32,7 +39,7 @@
 </script>
 
 <footer>
-	<button id="start">🪟Start</button>
+	<button id="start" onclick={toggleSysMenu}>🪟Start</button>
 	<div class="minimized-apps">
 	{#each apps as app}
 		<button class="minimized-button hidden" id={'minimized-' + app.id} onclick={openWindow}>{app.ico} {app.title}</button>
