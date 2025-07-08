@@ -1,6 +1,6 @@
 {
     "contact": {
-        "title": "Kontakt",
+        "title": "Contact",
         "articles": [
             {
                 "title": "Email",
@@ -9,7 +9,7 @@
         ]
     },
     "projects": {
-        "title": "Projekty",
+        "title": "Projects",
         "articles": [
             {
                 "title": "Projects",
@@ -18,7 +18,7 @@
         ]
     },
     "experience": {
-        "title": "Zkušenosti",
+        "title": "Experience",
         "articles": [
             {
                 "title": "Projects",
@@ -26,8 +26,8 @@
             }
         ]
     },
-    "certifications": {
-        "title": "Certifikace",
+    "certs": {
+        "title": "Certifications",
         "articles": [
             {
                 "title": "Projects",

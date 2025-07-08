@@ -1,0 +1,66 @@
+{
+    "contact": {
+        "title": "Kontakt",
+        "articles": [
+            {
+                "title": "Kontakt",
+                "text": "Můžete mě kontaktovat prostřednictvím následujících kanálů:"
+            },
+            {
+                "title": "E-mail",
+                "text": "Můžete mě kontaktovat e-mailem na adrese "
+            },
+            {
+                "title": "GitHub",
+                "text": "Můj GitHub profil je "
+            },
+            {
+                "title": "LinkedIn",
+                "text": "Můj LinkedIn profil je "
+            },
+            {
+                "title": "Twitter",
+                "text": "Můj Twitter účet je "
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projekty",
+        "articles": [
+            {
+                "title": "Eligma",
+                "text": "Eligma je projekt, který jsem založil v roce 2017. Je to platforma pro správu a vyhledávání produktů."
+            }
+        ]
+    },
+    "experience": {
+        "title": "Zkušenosti",
+        "articles": [
+            {
+                "title": "Zkušenosti",
+                "text": "Zde jsou některé z mých zkušeností."
+            },
+            {
+                "title": "Práce",
+                "text": "Pracoval jsem na různých projektech, které zahrnují vývoj webových aplikací, správu databází a další."
+            },
+            {
+                "title": "Technologie",
+                "text": "Mám zkušenosti s různými technologiemi, včetně JavaScriptu, Pythonu, SQL a dalších."
+            }
+        ]
+    },
+    "certs": {
+        "title": "Certifikace",
+        "articles": [
+            {
+                "title": "INE ICCA",
+                "text": "Tato certifikace potvrzuje mé znalosti v oblasti kybernetické bezpečnosti a etického hackingu."
+            },
+            {
+                "title": "Comptia Security+",
+                "text": "Here are some of my projects."
+            }
+        ]
+    }
+}

@@ -3,46 +3,48 @@
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
 	import SysMenu from '$lib/sysMenu.svelte';
-	import { locale } from 'svelte-i18n';
+	import { _ } from 'svelte-i18n'; // <-- This is required!
+	import '$lib/i18n/i18n'; // <-- This triggers your i18n setup (if needed)
 
 	let content = [
 		{
+			id: 'certs',
+			ico: '📜',
+			dskIco: '/images/Gray2.png'
+		},
+		{
 			id: 'contact',
-			title: 'Kontakt',
-			text: `Miroslav Nožička`,
 			ico: '📧',
 			dskIco: '/images/Blue.png'
 		},
 		{
-			id: 'projects',
-			title: 'Projekty',
-			text: `Seznam projektů, které jsem vytvořil ve volném čase.`,
-			ico: '📂',
-			dskIco: '/images/brown.png'
-		},
-		{
 			id: 'experience',
-			title: 'Zkušenosti',
-			text: `Zkušenosti z práce a školení.`,
 			ico: '💼',
 			dskIco: '/images/Gray1.png'
 		},
 		{
-			id: 'certs',
-			title: 'Certifikace',
-			text: `<h1>Certifikace, které jsem získal.</h1>`,
-			ico: '📜',
-			dskIco: '/images/Gray2.png'
+			id: 'projects',
+			ico: '📂',
+			dskIco: '/images/brown.png'
 		}
 	];
 </script>
 
 {#each content as item}
-	<Icon src={item.dskIco} alt={item.title} title={item.title} windowId={item.id}></Icon>
+	<Icon
+		src={item.dskIco}
+		alt={$_(`${item.id}.title`)}
+		title={$_(`${item.id}.title`)}
+		windowId={item.id}
+	></Icon>
 {/each}
 
 {#each content as item}
-	<ActionWindow title={item.ico + item.title} id={item.id}>{item.text}</ActionWindow>
+	<ActionWindow
+		title={item.ico + ' ' + $_(`${item.id}.title`)}
+		id={item.id}
+		articles={$_(`${item.id}.articles`)}
+	></ActionWindow>
 {/each}
 <SysMenu></SysMenu>
 <TaskBar apps={content}></TaskBar>

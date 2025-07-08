@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { _, locale } from 'svelte-i18n'; // <-- This is required!
+	import '$lib/i18n/i18n';
+
 	const { apps = [] } = $props<{ apps?: {}[] }>();
 	let currentTime = $state(
 		new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
@@ -15,9 +18,12 @@
 		if (langButton) {
 			langButton.textContent = langButton.textContent === 'CS' ? 'EN' : 'CS';
 		}
+		if (locale) {
+			locale.set($locale === 'cs' ? 'en' : 'cs');
+		}
 	}
 
-		function openWindow(event: MouseEvent) {
+	function openWindow(event: MouseEvent) {
 		let windowId = event.target?.id;
 		let targetWindow = document.getElementById(windowId.replace('minimized-', ''));
 		if (targetWindow) {
@@ -41,9 +47,11 @@
 <footer>
 	<button id="start" onclick={toggleSysMenu}>🪟Start</button>
 	<div class="minimized-apps">
-	{#each apps as app}
-		<button class="minimized-button hidden" id={'minimized-' + app.id} onclick={openWindow}>{app.ico} {app.title}</button>
-	{/each}
+		{#each apps as app}
+			<button class="minimized-button hidden" id={'minimized-' + app.id} onclick={openWindow}
+				>{app.ico} {$_(`${app.id}.title`)}</button
+			>
+		{/each}
 	</div>
 
 	<div class="time">
