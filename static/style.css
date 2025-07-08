@@ -183,7 +183,7 @@ footer {
     animation: 0.25s 1 normal forwards minimize;
 }
 
-article:has(#active-window) {
+dialog:has(#active-window) {
     z-index: 2000;
 }
 

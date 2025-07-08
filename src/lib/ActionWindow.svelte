@@ -2,7 +2,7 @@
 	import ActionBar from './ActionBar.svelte';
 	export let title = '';
 	export let id = '';
-	export let articles = [];
+	export let articles = [{ title: '', text: '' }];
 	let left = 0;
 	let top = 0;
 	let moving = false;
@@ -28,7 +28,7 @@
 			activeWindow.id = '';
 		}
 		if (e.target instanceof HTMLElement) {
-			let bar = e.target.closest('article')?.querySelector('.action-bar');
+			let bar = e.target.closest('dialog')?.querySelector('.action-bar');
 			if (bar) {
 				bar.id = 'active-window';
 			}
@@ -36,20 +36,21 @@
 	}
 </script>
 
-<article
+<dialog
 	class="action-window hidden"
 	style="left: {left}px; top: {top}px;"
 	on:mousedown={updateActiveWindow}
 	{id}
+	tabindex="0"
 >
 	<ActionBar on:mousedown={onMouseDown}>{title}</ActionBar>
-	<div class="content">
+	<article class="content">
 		{#each articles as article}
 			<section>
 				<h2>{article.title}</h2>
 				<p>{@html article.text}</p>
 			</section>
 		{/each}
-	</div>
-</article>
+	</article>
+</dialog>
 <svelte:window on:mouseup={onMouseUp} on:mousemove={onMouseMove} />
