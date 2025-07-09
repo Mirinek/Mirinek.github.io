@@ -12,6 +12,7 @@
 			targetWindow.classList.remove('minimized-window');
 			targetWindow.style = 'left: 0; top: 0;';
 		}
+		// TODO create new element instead of showing existing one
 		let minimizedButton = document.getElementById('minimized-' + windowId);
 		if (minimizedButton) {
 			minimizedButton.classList.remove('hidden');

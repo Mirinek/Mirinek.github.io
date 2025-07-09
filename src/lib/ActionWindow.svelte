@@ -2,7 +2,7 @@
 	import ActionBar from './ActionBar.svelte';
 	export let title = '';
 	export let id = '';
-	export let articles = [{ title: '', text: '' }];
+	export let articles = [{ title: '', text: '', image: '' }];
 	let left = 0;
 	let top = 0;
 	let moving = false;
@@ -49,6 +49,9 @@
 			<section>
 				<h2>{article.title}</h2>
 				<p>{@html article.text}</p>
+				{#if article.image}
+					<img src={article.image} alt={article.title} width="128px"/>
+				{/if}
 			</section>
 		{/each}
 	</article>

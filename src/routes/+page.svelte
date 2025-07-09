@@ -3,29 +3,34 @@
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
 	import SysMenu from '$lib/sysMenu.svelte';
-	import { _ } from 'svelte-i18n'; // <-- This is required!
-	import '$lib/i18n/i18n'; // <-- This triggers your i18n setup (if needed)
+	import { _ } from 'svelte-i18n';
+	import '$lib/i18n/i18n';
 
 	let content = [
 		{
 			id: 'certs',
 			ico: '📜',
-			dskIco: '/images/Gray2.png'
+			dskIco: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABIlJREFUWEedV01sG0UU/p7jKoVAoOUnkqWkBOx15EBKQQWiCqGeQEKUC0TyRgKEapdeEUiglAOiUASc4ITNhZ84B7gAqkDigIQQBygUjFLZ6yr9kTg0pSlIJFVRug/N7M7u7OyPTffgxDM787753ve+eSbIhwCw8Sc6pib90YRlkRlvXu1MALGMED7a9vqwvswYNwPEAxIIrIVJgkQEsIZEvBMJar5gzHpMxQ+ScAidpCgU/RuZqKMBw+yYQcV3HUpyAlJx+Rt7iY0/xm4BK9p4ekBdO97/SclS8IU8YrSm446QFwrXpCNBSeqk0QRqDJSXmk8wu4cBKmcQd47B753Mb3+T5568EmbZR5BUIrHN4nqQMKzFxjJAlTCzWaqn7wB3wbEPfK9LLSvjaXOBBqxWQ7KTlpDk6jBToufC3Im7RLlD3Wr9M12+MQBZjMkt1Ueas2TTcMKx69N65fsiBKzW+9IKHbuWXBlXw68pRr2cxAGCYgRgLTWkiTl23QcwQHXoFptSov10GaYgBgAofvLuaC53zVGAZwEMZZLQB680PD9tDPSGmKqd+drPHgCvCqRj9Kp1nxyg3Gq8wcDLes6k/Q1ATpK7GTfFsZ5d222IkNCzawEAa6mxAsZkn1Lu66TJzHHXsQ9MCVnIQ5VbDXlJKQ1MLTbvdYmPqcWJh+6X4AybZ7iHevPPvR4ITlYBEZyqVwVWq3kE4JdkhrQrVEw+MFbA/WMF3Lp1BJvuFaxe2sA3f5xG96+1iO5j3hECvrwlnyssz+1fk8HER0mIUDBQrQu9oPxx4wznMKEfIk857K/MoDi6LZHV9oVVfLrSxaXNzT4yoQ8du/aMiBxcRsoJRQpKi827ifi4GeXp8p2Y2X6L0RFE3zr+5yoWe8uaQ8frk5l29eZrv0Z9wLfinl0nq9U8zMQLXiRvgztuuBEHK7tiBZFExQedNjoXL6RV7Q+OXd8TassHKBkgLwWlVtMhcEmvt8d2FPFQYTzY9Pe18/jq7Ir8/sjE7ZKZq3lid0HO5Rk3R21zs4V7ZrFteFheBqKe32r/hNWNdUnS2LUjeHHnfdoSzyy8uhcK9oVsWIgILlUgXlAaYKLXiPmVKADCq7v3YCS/xRtm4O32jzi3sS6/xgFkcSEg+ZbkA5OnsFpNr3EmdMCYCrLvA3zKugszN93smQYB7bXz+PrsCogID49PJqYg2TAVAK9V9xgQAGRDgkoa9r2FcTy6o+hPKz9W3Zw6ijf9kbMMUZJaKeCd2b2R0tw3WZImGGhAtmTgI2AUw+HQ+LcO5VGv7MTEdaOZWnP+vojGid+CZtTPmASgPwKAMgENaJw0feTzTud6DOePEvhBpQW9r2ZC8/L6v8/PTU//Y7rgF6d6kX5036Ql1Rntige45ZiZvjxz8lm4OAiSWhkh4BeX6IXHbyt+G9Z3IBcpmwCAT2qQgmjMuGvpP1zUbPjWAIgNRPqKSBkOYiKxcOomkWr2GDb7/qx9RZoCEcZe/B+HM9dGmEr7senXuQHAXxrnOoyRBMxYJs+l2hr1q9/oH1VT/R8SrNXoE/uWOAAAAABJRU5ErkJggg=='
 		},
 		{
 			id: 'contact',
 			ico: '📧',
-			dskIco: '/images/Blue.png'
+			dskIco: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABFFJREFUWEelV02IHEUU/l5PNMlOD0lwxUMgSm5ilCTj9BjZJcn0Zj0ZDxoEbzkJghgUzSVIxBxUEAPixYN4E0wuyUUM0+NgVmF6jRv/cjEKGi+LEhNndmRDpp9Wd1d1dXd194h9mZmuqlffe+/7vqohVD4EgAHIz2RB8sb0rTJwOEGsVF/ENqaNpgmVhzfNKg2APj0VrCxyOKZNIIA4qlfhk4mnKpAurPj1f+phrqoplwjAVPUjELiADeYY04QVUQs4Fg0kVU6XWta5chOKZ6T6kibtdGwxzjI01EiAYpg5DsgXhUSKYyUN0WSUUCdLgrjTsol5xpl5QMBf+5uzVLOeJ9AeAtaZ+FLdWn+XLny7pheSFx+sjyebXgCwh4GNjGBlsr7p9NalpT8jmuU3T/lAmotR6JHbvgfg7wHM6n4BwtXNd1zfZX1ydT1M+vHmzGit9h0RdiqWRgtWg8lk15b+pT+yFZWAwornOhT3YdRpnQZIZKUeNZfwot313xEDax3nFSa8WZDnW7bnHw93MZhEzFEzSYau8yWB9oUyCd1YkwzxR42u/4zQyZrbPMuoPRmh1HIN13Df9pYPZjmsiy+TXxJk6DpfEPComiCPhGjKx3bPfzqsgOucYeCpTPmlxSzVPX8+BUAUQ4Tg2IqLRDJaaH0ApqOmNv275mTd818TY8NO+3UiPmHKMgC/3/CWnzU0UQLMLNP8/e8Dj9wX1IKvANylkmcgIPx8e3Krua1/+YZYfWNubtuGjbdWANybisb43Qpo70x/8FuKxPEPvaApgJIrAsvNg81Zsswy1DfjxYdiGfJeBt3J4FiGF0MZZqlewIFoXumJVum9xRU1qSnnhNk+ZsmjSG4ColwyeyT/ByuWG4r+TyyeBwX3g63dAM/ElRwyaAUIfiBYfdsbrMo1fBLW+GL7BDN3QDQGgssEXLEo+Hxz9+tfo3mxTDWwqRaNXWdfAGEqmE/fV3QvUxkJJZ0PLHp5S9f/UeiKjxypja//0mdgTsqSOLRhD0wv2Z8NvhF2IhZKZkS4BPql1tvMdKzQucXtRxAk7523GXSs4Q3eE7FGh1q7EVgrKluJncDMdKrRG7yaU8XIbR8H+I00B0xQS1jC9JjdG1wQ+IYd5ycCdub5HzrQUbu3/KGooyLhyHXEofNA2fWoSgBMfL7RXX4irMKC8ykYixlfkNbnNzy/Le5XOgBhFtsVT6bQRx4Q+bY3aIsYw4XWOWI6bKoXAdfqPX+H4Ig6DYeukwCQZFVuUZW7mujbnh8DePicxXS44GJzzfb8HWF75NLwQGHcnSDOOpIhX3nJSCR1pd7znwsrcMg5RRPMpU1QnUKr8iBLCp2Jb8xZ98+qO5tOc6OCMzLMsd/w90KizQmxDJh2uOX5IO5FVe0tyKTEibUuEkiYk1G5UYQCrk+LqsQTSjbVhyIA2f0K+JB+XXVspuhcWIVytVeSLgcpshFjAslLffgftQTIM1GhsVcAAAAASUVORK5CYII='
 		},
 		{
 			id: 'experience',
 			ico: '💼',
-			dskIco: '/images/Gray1.png'
+			dskIco: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABO9JREFUWEelV21MHFUUPXeXFlgooRhbRUqrtVAqQSxrI9VoNumPxqitsqu2tCnBmFhjpxgTLbu1adIWqj9sCok/m2ijRtnEr/gRbYJpiGl1UxIIHwVrgigpiaYQvgR299l5O2/mzcxbFuL82pl5797zzj333FmC7SIALPVE+iluiAAmvRZbjUeOSATmjGXEJBjvKBXZddlyO96KDUy5yMwAMDONFUGxxwZAnVg8XQqW6hhLPbPAGSQoaE+TLxMM632mlSn6lSVY6XkUolGGUEH63wB40MyHtWlaXq4Xgws/dKQ5yIhOAyg3F7gDjxPQjrHhsx3RjsTKmHIGS91zAMSAOi3cB2BbWu70F5ZULgMUibad6VK1YMa2MnLqzJkMBLVw5ljLoHoJVq4TY8c72luj8hpTAzYAK04k+t9yqjRl7I+2tTwgAPAuEAsFgGhbiwkqEw7ZGZ2Oqntd98DQ04w8b+lEe1jyneqKLV9bghUaMHaqAKSj09oqqmZB7ezszCq8a0M9gDdBdk0xRv0E9u7EzdGPAoFAXDg+zxPUIkxXmcxA/ZGTBfO08A2AWgBehbmaGFdlZWF7ZTl2VFWiID/PbeC60nXFM4apmdn4zNxM+505G4+7NCADCGrhFgDNLqNx1Ybwxkv7kZOdbTRWipnJqWnEegcwMTWFsk0bUVm+2fQDI/Et04pVJQhp4d8ZcO9yBlbk1UZuSPyg+rRjCZy78Anm5udN/C8/vxfr7iiyhUvLQEg7VsPgicmKTZ3L7mPCHHQA8vXH2DgufqFXz7qe2FGDx/wPcjsRUUwAoaNhps96UYI6LdLqIRwTHwBuudl5sQMgzMz+i/MffAwe1AAeeKQGO7dXuRnQUdQZRiQABLXwCIBSdSdIfWAcxcmAvq/zSgy/9PYjvphAni8Hh557CmsL1jgAGAFSGiBE285QqClczZLolieV0yadOmx+pQEej8eFd35xkYtxXdFa1VkWrBJoYU6WzkCdFj5NQMSa1u7vBWdLNjW8iDyfz0yyGI9jdOwm/pmY5M+KCgtRWrweertK1192JyQger6FgkfDQwC2iOGjLoNdj/XP7MamkmLEEwn82HUVPYPD/LfptQzwZnnx7K7Ah+X3le4DsMpD+N7VBZT0VjFPoseeVHh9aiLyO0cNah+qQqDWj5+uxPDztV5poS3S+N9Fq0vO7TsYuS3uk4xB4wBkEYJwCgxvyw1nzyVmqZ2BvNxcNB16AUMjfyL63SWe1dm2BJzoaGs51T144ysGtouyvcV2BlKZBgFslXHL9XaKT77f/fhO1FRuxQ9dVxHr6eOuaH5EAAvEWEnktcYDjNF7xNjZ6oqyZlkDfebwyPxlYOGTcvhyc3B4fx2yV6/GZ99ewm8joyZNDHTxxOGGjiR5vgTYaGLaV+H3F8+aVsw/yUCtINzv9Lu0IlS82HD3ehzY8ySv67XeAVyOdfNVjaG9nxauyQvenpKz3iQ9WrVtsy4UoVFRCfXRbUQqPwLshem+fuNhxtjnBNwDwiQYvCDkAxhOUnJPTVnZgMAueY0kLsM6pfotnwQjYuzXMZ83f+51BnaQgHmALiSmb73v9/sX7foyoTj++DnIcE1g+Qgr0YxznKULbDGdNrXSKoTwl1EpDiVFmCqH+WxpAK5EyuXpmlcAkM7i3r9MBsyjy60vTRMDqZPZ/wBucf3ik+UbkAAAAABJRU5ErkJggg=='
 		},
 		{
 			id: 'projects',
 			ico: '📂',
-			dskIco: '/images/brown.png'
+			dskIco: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAvpJREFUWEeVV01uU0EMtpuk2fUUiEqEwJYIkNI7VJyBLruGJRLsWSR3gCMgElClwrYFJI7QI9AEjMaemef58bzX2STvzdj+5vNnzzyEwQMBgAD8jzYrXoUXlbWpA2R35kjszSgDdlAFInZNAInrHicU3CEBEjqu/Oj+1aC2AYTZ6KND0cCTxXE0kwKUTg9KwfBgnlMaZuGgFQCiqeHDnh8WNFdxBLDfPDolpDcAcNxQ5Q0Avh/fHL/DFx/+SshWWmqgEAB9TkkxcLud/0SABwM07ZZ8BcJXhydXF1F8CkoZ1mInBcCZ08M5t0TSmuN+kVmqN7+R8PX45OqjW+P9I+y2Dyv1ImbandNzT/soSSwJ+HW4vJ4pTwpAn5aMeZuRGhsE0+UPVoIwgAC7zZwZ6PYcNjKwV2lgrU34ucnymh1H77utALjLYLDe4Wh2Dnh0v99cE3KA2zaAvnSocOPFqh48BEwykZYuG2oGEtH5tXbHkrgBwP7yLDsDxDKPP36yiocrZ4KrQO04VXvIjl2U48WaHe6/n0m0nhEAZymoaNlIgzhA2F++TBiQ0qohEEf5VvoBKEJ1R8gpZ0ozgqqlqZWbVoFLAWb02dVtMRA10NMvkhS4tbfVMiw7YUhtCWDNUyEltgTE52ixYsJCGSdVoI0tDroUOA2gr4I71K0PUu0DzaPEGwYAu29SdhOngcZgcZK71KYgOwBf5sTz2gmvraehVwMZGKtRlVWQCTFpZBE8wWixZrBBdHlKOhalo0yMThkB2BcSqdz8EC7K0GrFRRtU1ATGHYrd58encPDvLQHcs1Kpmwh3PqCOgdk5wJG7zakmlIlJHjsNEOKnKAktjfSo0GE75/RHbmM4fe7UVWm/wyrCau6RhDowgASA2jWvr8S24FQAtJaWDJRHXdK75SGSiIDTpxwzRIkANO36S4aLopIFur3YAMGyppf6GSDXcZw+KyqdfQzPmBwZYVciBLnq65ItgdnKis0nEqwCWF92JWB5Y2km3WW36j9wxFfvZeBtFQAAAABJRU5ErkJggg=='
+		},
+		{
+			id: 'vm',
+			ico: '🖥️',
+			dskIco: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAp5JREFUWEe1V9tRAzEMlEkZ0F4oirSXlBHM6GnJsmxgIB/MnR/yar0rHQ3+8dcAoEt8/8xDOKJ/HYi80CPkTSPsmFvuq5bb4gZte2ADaJhCA+iaCsGeB1Y01mBXKTEXdIg+7LlwG/aX6MKkiK3JRcyQfLa/0EgJfZrAV+XpeMwf8ZHOGVKUrC8fj36GJcJYwI4zKiDREQB8Xt8aCUvOSwxcbg+aSke4gXkuvXfWKQbpKGRzToMnAjBzzlfQAIgBAHheX2UrEzJkwW9ZUA41ApjMqolxXC91cwtv4YVdkB6lsVkQbbgCEAoRHT8zUFSXBt2uKBjGO9jVKxx+uT2olJAGcLesXWugd3i+48JFpftWEcobPQM+LztEB3EhIu3XVyqC/r407ExMeDf1RRCkrQ7wfGcNBAb8bf1YA6cCIR643O6TtoaYA8/RBbXG9ufOJHe4fNw7elNd4NkURngTimXY0FGV+o87RJqWCdKLUfoLM6D2jtoKaZpY8K60wpS9IWc6i0aJRgDsAtGA01cA8HK7d+xRJJb5YPVqmijU6iIPF7w1b+PChk6tu1p0FODYPBeipAEdyAsjzUrLqWPP2FBbOIYiXNYBdbyKRQsZURSbmqW17on7Thk0YI3KXSG7YBXEl6X4sUnbUWKUG/8qGNwNdYV1w0GKXsF89RqQfGzL8VH6gtg0749Qyjowa6DKwkrpSMI1V5BuWiu3BBCRD9Srjw8Mn+wTSF9/vfhYyqTF0SaUA9f3ucyz1mCA6D9MQmc62Wt1aLTceNuWCZkkI6iQzsEXK8pTfI/VS8vprRh3pqy+CCIQZ4rVf222OPWoqKVzgyXhh2VzGzzw6b6mPJiQTkBpG87gPLl8qcGniTL93NpcwU4RGVAlxLoi8MwXlppLOgTuAyUAAAAASUVORK5CYII='
 		}
 	];
 </script>
@@ -48,144 +53,3 @@
 {/each}
 <SysMenu></SysMenu>
 <TaskBar apps={content}></TaskBar>
-<!--
-<article>
-	<Draggable>
-		<section style="display: block;margin: auto; width: 65%;">
-			<h2 id="contact">Kontakt</h2>
-			<ul>
-				<li><b>Miroslav Nožička</b></li>
-				<li>IČO: 14404826, neplátce DPH</li>
-				<li>email: miroslav.nozicka@outlook.com</li>
-				<li>Sídlo: Hornická 35, Staré Město 78832</li>
-				<li>Podnikatel vedený u Živnostenského úřadu v Šumperku</li>
-			</ul>
-			<img width="80%" src="/images/port.jpg" alt="Portrait" />
-		</section>
-	</Draggable>
-	<section>
-		<h2 id="projects">Projekty</h2>
-		<p>Seznam projektů, které jsem vytvořil ve volném čase.</p>
-		<h3><a href="https://eligma.cz/">Eligma</a></h3>
-		<div>
-			<p>Online nástroj pro přátele skauty, který umožňuje snadno šifrovat/kódovat text.</p>
-			<img width="100%" src="/images/eligma.png" alt="web eligma" />
-			<h3><a href="https://stredisko-sneznik.skauting.cz/">Středisko Sněžník</a></h3>
-			<img width="100%" src="/images/sneznik.png" alt="web středisko sněžník" />
-			<p>
-				Na tento projekt jsem z technologické hlediska hrdý. Na první pohled se nejedná o nijak
-				zajímavou webovou stránku, ale na pozadí se dějí zajímavé věci.
-			</p>
-			<p>
-				Stránky jsou statické, ale přesto mají administraci ve které mohou uživatelé upravovat a
-				přidávat nový obsah. Stránky využívají <a href="https://decapcms.org/">Decap CMS</a> s
-				Github Backendem pro editaci stránkek a zachování historie. S trochou PHP na propojení
-				(Github OAUTH). CMS pushne změny na git, Github actions buildnout změny S pomocí generátoru
-				statických stránek <a href="https://gohugo.io/">Hugo</a> a výsledek se přes FTP nahraje na server.
-			</p>
-			<h3><a href="https://quickcards.eu/cs/">Quickcards</a></h3>
-			<p>
-				Jednoduchý nástroj pro tvorbu studijních kartiček. Hlavně pro osbní účely při studiu na
-				certifikáty.
-			</p>
-			<img width="100%" src="/images/quickcards.png" alt="web quickcards" />
-			<h3>2D grafika</h3>
-			<p>
-				Mimo programování se snažím zlepšovat i v designu a grafice. Především kvůli tvorbě her.
-			</p>
-			<h4>Pixel art</h4>
-			<ul class="two-cols">
-				<li>
-					<a href="https://lowich.itch.io/slime-platformer-tileset">Platformer asset pack</a>
-					<Draggable>
-						<iframe
-							title="Platformer"
-							frameborder="0"
-							src="https://itch.io/embed/2007821"
-							width="90%"
-							height="167"
-							><a href="https://lowich.itch.io/slime-platformer-tileset"
-								>Slime platformer tileset by Lowich</a
-							></iframe
-						>
-					</Draggable>
-				</li>
-				<li>
-					<a href="https://lowich.itch.io/free-spaceship-sprites">Shoot'em up asset pack</a>
-					<Draggable>
-						<iframe
-							title="Space ships"
-							frameborder="0"
-							src="https://itch.io/embed/1839661"
-							width="90%"
-							height="167"
-							><a href="https://lowich.itch.io/free-spaceship-sprites"
-								>Spaceship sprites by Lowich</a
-							></iframe
-						></Draggable
-					>
-				</li>
-			</ul>
-		</div>
-	</section>
-	<div class="two-cols">
-		<Draggable>
-		<section>
-			<h2 id="experience">Zkušenosti</h2>
-			<h3>Golang developer: <a href="https://www.mall.cz/">Mall.cz</a></h3>
-			<ul>
-				<li>Správa a vývoj několika Golang micro service</li>
-				<li>Značné optimalizace a přechod na asynchroní zpracování</li>
-				<li>Monitoring, alerting a stabilizace služeb</li>
-			</ul>
-			<h3>Python developer: <a href="https://fameless.cz/">Fameless.cz</a></h3>
-			<ul>
-				<li>Tvorba komplexního GraphQL API pro komunikaci s Pohodou</li>
-				<li>Implementace Django aplikace s administrací a komunikací přes RabbitMQ</li>
-				<li>Implementace programu pro koncová Windows zařízení se správou Windows služeb</li>
-			</ul>
-			<h3>Backend developer: <a href="https://geekcoders.cz/">Geekcoders.cz</a></h3>
-			<ul>
-				<li>Práce na PHP, Python a Golang projetech, příležitostná Dev/Ops výpomoc</li>
-				<li>Konfigurace a údržba serveru pro interní služby</li>
-			</ul>
-		</section>
-		</Draggable>
-		<div>
-			<Draggable>
-			<section>
-				<h2 id="certs">Certifikace</h2>
-				<ul>
-					<li>
-						<a href="https://www.credly.com/badges/0942dd0a-7e72-4ba3-b45c-6514035034bd/public_url"
-							>Comptia Security+</a
-						>
-					</li>
-					<li>
-						<a href="https://skillshop.exceedlms.com/student/award/wJyxjacTNbVyXGsnxqmQPoXJ"
-							>Fundamentals of Digital Marketing</a
-						>
-					</li>
-					<li>
-						<a href="https://courses.edx.org/certificates/28ffc856d0194eaba4a91b6e0316bc34"
-							>DAT101x: Microsoft Professional Orientation : Data Science</a
-						>
-					</li>
-				</ul>
-			</section>
-			</Draggable>
-			<Draggable>
-			<section>
-				<h2 id="tech">Technologie a nástroje</h2>
-				<ul>
-					<li>Frontend: HTML, CSS, JS, Svelte, Alpine.js</li>
-					<li>Backend: Python, Golang, PHP</li>
-					<li>Databáze: MySQL, MSSQL, MariaDB, MongoDB</li>
-					<li>DevOps: Docker, Github Actions, Gitlab pipelines, Bitbucket pipelines</li>
-					<li>Ostatní: Linux, Git, RabbitMQ, GraphQL</li>
-				</ul>
-			</section>
-			</Draggable>
-		</div>
-	</div>
-</article>-->
