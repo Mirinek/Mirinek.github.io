@@ -2,8 +2,8 @@ import { register, init, locale, waitLocale } from 'svelte-i18n';
 
 const defaultLocale = 'cs';
 
-register('en', () => import('../locales/en.json'));
-register('cs', () => import('../locales/cs.json'));
+register('en', () => import('./en.json'));
+register('cs', () => import('./cs.json'));
 
 init({
 	fallbackLocale: defaultLocale,

@@ -19,5 +19,6 @@
 <div id="sys-menu" class="hidden">
 	<button on:click={openGtihub}>i</button>
 	<button on:click={reboot}>↻</button>
-	<button on:click={exit}>⏼</button>
+	<button on:click={exit}>x</button>
+	<p>© {new Date().getFullYear()} Miroslav Nožička</p>
 </div>

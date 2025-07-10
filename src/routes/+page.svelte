@@ -2,7 +2,7 @@
 	import ActionWindow from '$lib/ActionWindow.svelte';
 	import TaskBar from '$lib/TaskBar.svelte';
 	import Icon from '$lib/Icon.svelte';
-	import SysMenu from '$lib/sysMenu.svelte';
+	import SysMenu from '$lib/SysMenu.svelte';
 	import { _ } from 'svelte-i18n';
 	import '$lib/i18n/i18n';
 
