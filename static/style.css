@@ -36,20 +36,21 @@ html {
 }
 
 .action-window {
+    margin: unset;
     position: absolute;
     width: 50vw;
     height: 50vh;
     background-color: #D3D3D3;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border: 0.25rem solid #DDD;
     display: flex;
     flex-direction: column;
-    border: 0.25rem solid #DDD;
     border-bottom: 0.25rem solid #B6B6B6;
     border-right: 0.25rem solid #B6B6B6;
     padding: 0.25rem;
     resize: both;
-    overflow: hidden;
-    min-width: 20rem;
+    overflow: auto;
+    min-width: 22rem;
     min-height: 8rem;
     z-index: 10;
 }
@@ -264,12 +265,15 @@ footer {
 
 .minimized-apps {
     margin-left: 5rem;
+    display: flex;
+    flex-flow: row;
+    width: calc(100% - 14rem);
 }
 
 .minimized-button {
     font-weight: bold;
     height: 2.5rem;
-    width: 8rem;
+    width: 14vw;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0.25rem;
@@ -377,7 +381,4 @@ p:has(iframe) {
 section:has(p>iframe) {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

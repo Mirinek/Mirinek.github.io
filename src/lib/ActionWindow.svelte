@@ -15,6 +15,7 @@
 		if (moving) {
 			left += e.movementX;
 			top += e.movementY;
+			
 		}
 	}
 
@@ -38,7 +39,8 @@
 
 <dialog
 	class="action-window hidden"
-	style="left: {left}px; top: {top}px;"
+	style:left="{left}px"
+	style:top="{top}px"
 	on:mousedown={updateActiveWindow}
 	{id}
 	tabindex="0"
@@ -50,7 +52,7 @@
 				<h2>{article.title}</h2>
 				<p>{@html article.text}</p>
 				{#if article.image}
-					<img src={article.image} alt={article.title} width="128px"/>
+					<img src={article.image} alt={article.title} width="25%"/>
 				{/if}
 			</section>
 		{/each}

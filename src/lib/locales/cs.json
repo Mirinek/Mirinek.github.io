@@ -29,7 +29,8 @@
         "articles": [
             {
                 "title": "Eligma",
-                "text": "Eligma je projekt, který jsem založil v roce 2017. Je to platforma pro správu a vyhledávání produktů."
+                "text": "Eligma je projekt, který jsem založil v roce 2017. Je to platforma pro správu a vyhledávání produktů.",
+                "image": "images/eligma.png"
             }
         ]
     },

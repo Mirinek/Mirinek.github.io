@@ -10,7 +10,8 @@
 			targetWindow.classList.remove('hidden');
 			targetWindow.classList.remove('closed-window');
 			targetWindow.classList.remove('minimized-window');
-			targetWindow.style = 'left: 0; top: 0;';
+			targetWindow.style.left = 'left: 0';
+			targetWindow.style.top = 'top: 0;';
 		}
 		// TODO create new element instead of showing existing one
 		let minimizedButton = document.getElementById('minimized-' + windowId);
@@ -21,7 +22,13 @@
 	}
 </script>
 
-<div class="icon-element" role="button" tabindex="0" on:dblclick={spawnWindow} on:touchend={spawnWindow}>
+<div
+	class="icon-element"
+	role="button"
+	tabindex="0"
+	on:dblclick={spawnWindow}
+	on:touchend={spawnWindow}
+>
 	<img class="icon-image" {src} {alt} />
 	<h3>{title}</h3>
 </div>
