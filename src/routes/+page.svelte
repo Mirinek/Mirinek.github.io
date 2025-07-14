@@ -4,7 +4,8 @@
 	import Icon from '$lib/Icon.svelte';
 	import SysMenu from '$lib/SysMenu.svelte';
 	import { _ } from 'svelte-i18n';
-	import '$lib/i18n/i18n';
+	import { } from '$lib/locales/i18n';
+
 
 	let content = [
 		{

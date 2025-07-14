@@ -20,5 +20,5 @@
 	<button on:click={openGtihub}>i</button>
 	<button on:click={reboot}>↻</button>
 	<button on:click={exit}>x</button>
-	<p>© {new Date().getFullYear()} Miroslav Nožička</p>
+	<p>©&nbsp;{new Date().getFullYear()} Miroslav Nožička</p>
 </div>

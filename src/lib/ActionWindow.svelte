@@ -15,7 +15,6 @@
 		if (moving) {
 			left += e.movementX;
 			top += e.movementY;
-			
 		}
 	}
 
@@ -50,10 +49,10 @@
 		{#each articles as article}
 			<section>
 				<h2>{article.title}</h2>
-				<p>{@html article.text}</p>
 				{#if article.image}
-					<img src={article.image} alt={article.title} width="25%"/>
+					<img src={article.image} alt={article.title} width="25%" />
 				{/if}
+				<p>{@html article.text}</p>
 			</section>
 		{/each}
 	</article>

@@ -4,7 +4,8 @@
         "articles": [
             {
                 "title": "Email",
-                "text": "You can contact me via email at "
+                "text": "You can contact me via email at ",
+                "image": ""
             }
         ]
     },

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { _, locale } from 'svelte-i18n'; // <-- This is required!
-	import '$lib/i18n/i18n';
 
 	const { apps = [] } = $props<{ apps?: {}[] }>();
 	let currentTime = $state(
