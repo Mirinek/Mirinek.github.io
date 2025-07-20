@@ -386,3 +386,6 @@ section:has(p>iframe) {
     font-size: x-small;
     text-align: center;
 }
+h2 {
+    border-bottom: 0.25rem solid #B6B6B6;
+}

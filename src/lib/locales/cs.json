@@ -8,7 +8,7 @@
                 "image": "images/port.jpg"
             },
             {
-                "title": "GitHub",
+                "title": "Kontakt",
                 "text": "<a href='https://github.com/Mirinek'> Github profil</a>"
             },
             {
@@ -48,11 +48,15 @@
         "articles": [
             {
                 "title": "Senior backend developer - Geekcoders",
-                "text": ""
+                "text": "<ul><li>Práce na PHP, Python a Golang projetech, příležitostná Dev/Ops výpomoc</li> <li>Konfigurace a údržba serveru pro interní služby</li></ul>"
             },
             {
                 "title": "Backend developer - Mallgroup",
-                "text": ""
+                "text": "<ul><li>Správa a vývoj několika Golang micro service</li> <li>Značné optimalizace a přechod na asynchroní zpracování</li> <li>Monitoring, alerting a stabilizace služeb</li></ul>"
+            },
+            {
+                "title": "Backend developer -  Fameless",
+                "text": "<ul><li>Tvorba komplexního GraphQL API pro komunikaci s Pohodou</li> <li>Implementace Django aplikace s administrací a komunikací přes RabbitMQ</li> <li>Implementace programu pro koncová Windows zařízení se správou Windows služeb</li></ul>"
             }
         ]
     },
@@ -80,6 +84,14 @@
         "articles": [
             {
                 "text": "<iframe width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"http://nozickami.cz/\" title=\"VM\"></iframe>"
+            }
+        ]
+    },
+    "readme": {
+        "title": "README.txt",
+        "articles": [
+            {
+                "text": "<h1>Vítejte na stránce README.txt</h1>"
             }
         ]
     }

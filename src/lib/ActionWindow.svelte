@@ -37,7 +37,7 @@
 </script>
 
 <dialog
-	class="action-window hidden"
+	class={"action-window hidden" + (id === 'readme' ? 'active-window' : '')}
 	style:left="{left}px"
 	style:top="{top}px"
 	on:mousedown={updateActiveWindow}

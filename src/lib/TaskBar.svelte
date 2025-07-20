@@ -47,7 +47,7 @@
 	<button id="start" onclick={toggleSysMenu}>🪟Start</button>
 	<div class="minimized-apps">
 		{#each apps as app}
-			<button class="minimized-button hidden" id={'minimized-' + app.id} onclick={openWindow}
+			<button class={"minimized-button " + (app.id === 'readme' ? '' : 'hidden')} id={'minimized-' + app.id} onclick={openWindow}
 				>{app.ico} {$_(`${app.id}.title`)}</button
 			>
 		{/each}
