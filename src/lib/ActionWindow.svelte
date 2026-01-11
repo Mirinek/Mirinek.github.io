@@ -50,7 +50,7 @@
 		{#each articles as article}
 				<section style={article.title ? 'height: fit-content;' : ''}>
 				{#if article.title}
-					<h2><a href="{article.link}" target="_blank">{article.title}</a></h2>
+					<h2>{@html article.link ? "<a href=\"" + article.link + "\" target=\"_blank\">" + article.title + "</a>" : article.title}</h2>
 				{/if}
 				{#if article.image}
 					<a href="{article.link}" target="_blank"><img src={article.image} alt={article.title} width="25%" /></a>
