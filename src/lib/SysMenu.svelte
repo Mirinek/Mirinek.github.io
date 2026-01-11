@@ -11,13 +11,13 @@
 		}
 		window.history.back();
 	}
-	function openGtihub() {
+	function openGithub() {
 		window.open('https://github.com/Mirinek/Mirinek.github.io', '_blank');
 	}
 </script>
 
 <div id="sys-menu" class="hidden">
-	<button on:click={openGtihub}>i</button>
+	<button on:click={openGithub}>i</button>
 	<button on:click={reboot}>↻</button>
 	<button on:click={exit}>x</button>
 	<p>©&nbsp;{new Date().getFullYear()} Miroslav Nožička</p>
