@@ -15,7 +15,6 @@
 		if (minimizedButton) {
 			minimizedButton.classList.add('minimized-button-closed');
 		}
-
 	}
 
 	function maximize(event: MouseEvent) {
@@ -29,7 +28,6 @@
 			minimizedButton.classList.add('hidden');
 		}
 	}
-
 </script>
 
 <section class="action-bar" id="" on:mousedown role="menubar" tabindex="0">

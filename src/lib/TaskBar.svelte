@@ -3,7 +3,7 @@
 
 	const { apps = [] } = $props<{ apps?: {}[] }>();
 	let currentTime = $state(
-		new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+		new Date().toLocaleTimeString(['cs'], { hour: '2-digit', minute: '2-digit' })
 	);
 
 	function toggleSysMenu() {
@@ -29,7 +29,7 @@
 			targetWindow.classList.remove('hidden');
 			targetWindow.classList.remove('closed-window');
 			targetWindow.classList.remove('minimized-window');
-			targetWindow.style = 'left: 0; top: 0;';
+			targetWindow.style.animation = '';
 		}
 		let minimizedButton = document.getElementById(windowId);
 		if (minimizedButton) {
@@ -39,12 +39,12 @@
 	}
 
 	setInterval(() => {
-		currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+		currentTime = new Date().toLocaleTimeString(['cs'], { hour: '2-digit', minute: '2-digit' });
 	}, 1000);
 </script>
 
 <footer>
-	<button id="start" onclick={toggleSysMenu}>🪟Start</button>
+	<button id="start" onclick={toggleSysMenu}><img src="images/start_icon.png" alt="" style="margin-right: 0.25rem;">Start</button>
 	<div class="minimized-apps">
 		{#each apps as app}
 			<button class={"minimized-button " + (app.id === 'readme' ? '' : 'hidden')} id={'minimized-' + app.id} onclick={openWindow}
@@ -53,7 +53,7 @@
 		{/each}
 	</div>
 
-	<div class="time">
+	<div>
 		<button id="lang" onclick={swapLanguage}>CS</button>
 		|
 		{currentTime}

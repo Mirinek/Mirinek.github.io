@@ -1,11 +1,19 @@
 {
     "contact": {
-        "title": "Contact",
+        "title": "Contakt",
         "articles": [
             {
-                "title": "Email",
-                "text": "You can contact me via email at ",
-                "image": ""
+                "title": "About me",
+                "text": "I am primarily a backend developer, with an interest in technology, cybersecurity, game development, and 3D printing. I enjoy learning new technologies and constantly strive to improve my skills.<ul><li><b>Miroslav Nožička</b></li> <li>IČO: 14404826, neplátce DPH</li> <li>email: miroslav.nozicka@outlook.com</li> <li>Sídlo: Hornická 35, Staré Město 78832</li> <li>Podnikatel vedený u Živnostenského úřadu v Šumperku</li></ul>",
+                "image": "images/port.jpg"
+            },
+            {
+                "title": "Contact",
+                "text": "<ul><li>Email: <a href='mailto:miroslav.nozicka@outlook.com'>miroslav.nozicka@outlook.com</a></li><li><a href='https://www.linkedin.com/in/miroslav-nozicka-31584a199/' target=\"_blank\"> LinkedIn profil</a></li></ul>"
+            },
+            {
+                "title": "Social and other networks",
+                "text": "<ul><li><a href='https://github.com/Mirinek' target=\"_blank\"> Github profile</a></li><li><a href='https://lowich.itch.io/' target=\"_blank\"> Itch.io profile</a></li><li><a href='https://www.printables.com/@Lowich_1199788' target=\"_blank\"> Printables profile</a></li></ul>"
             }
         ]
     },
@@ -13,8 +21,32 @@
         "title": "Projects",
         "articles": [
             {
-                "title": "Projects",
-                "text": "Here are some of my projects."
+                "title": "Středisko Sněžník",
+                "text": "<p>Website of Scout Center 'Sněžník'.</p>",
+                "image": "images/sneznik.png",
+                "link": "https://stredisko-sneznik.skauting.cz/"
+            },
+            {
+                "title": "Eligma",
+                "text": "<p>Web encryption tool for Scouts and other creators.</p>",
+                "image": "images/eligma.png",
+                "link": "https://eligma.cz/"
+            },
+            {
+                "title": "StMS - 30",
+                "text": "<p> Website of the StMS - 30 bunker in Staré Město.</p>",
+                "image": "images/stm30.png",
+                "link": "https://stms30.cz/"
+            },
+            {
+                "title": "3D modeling",
+                "text": "<iframe src=\"https://www.printables.com/embed/1346255\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/1048333\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/616997\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/573385\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/573200\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe>...",
+                "link": "https://www.printables.com/@Lowich_1199788"
+            },
+            {
+                "title": "2D graphics/pixel art",
+                "text": "<iframe frameborder=\"0\" src=\"https://itch.io/embed/1839661\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-spaceship-sprites\" target=\"_blank\">Spaceship sprites by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/1866810\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-pixel-art-spaceship-sprites\" target=\"_blank\">Spaceship sprites by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/2007821\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/slime-platformer-tileset\" target=\"_blank\">Slime platformer tileset by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/4189814\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/misc-corporate-icons\">Misc corporate Icons by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/1852593\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-water-fowl-sprites\">Waterfowl sprites by Lowich</a></iframe>...",
+                "link": "https://lowich.itch.io/"
             }
         ]
     },
@@ -22,8 +54,16 @@
         "title": "Experience",
         "articles": [
             {
-                "title": "Projects",
-                "text": "Here are some of my projects."
+                "title": "Senior backend developer - Geekcoders",
+                "text": "<ul><li>Work on PHP, Python, and Golang projects, occasional Dev/Ops support</li> <li>Configuration and maintenance of the server for internal services</li></ul>"
+            },
+            {
+                "title": "Backend developer - Mallgroup",
+                "text": "<ul><li>Management and development of several Golang microservices</li> <li>Significant optimizations and transition to asynchronous processing</li> <li>Monitoring, alerting, and stabilization of services</li></ul>"
+            },
+            {
+                "title": "Backend developer -  Fameless",
+                "text": "<ul><li>Development of a complex GraphQL API for communication with Pohoda</li> <li>Implementation of a Django application with administration and communication via RabbitMQ</li> <li>Implementation of a program for end Windows devices with management of Windows services</li></ul>"
             }
         ]
     },
@@ -31,16 +71,39 @@
         "title": "Certifications",
         "articles": [
             {
-                "title": "INE ICCA",
-                "text": "This certification confirms my knowledge in the field of cybersecurity and ethical hacking."
+                "title": "eJPT - INE",
+                "text": "",
+                "link": "https://certs.ine.com/b1f5384d-c5ca-446e-b323-679f45cb174a#acc.eWd1y3F0",
+                "image": "images/ejpt.png"
+            },
+            {
+                "title": "ICCA - INE",
+                "text": "",
+                "link": "https://certs.ine.com/27a8c3b4-6013-4ed6-a0f5-84123283c0cf#acc.NRDpOsI5",
+                "image": "images/icca.png"
+            },
+            {
+                "title": "Comptia Security+",
+                "text": "",
+                "link": "https://www.credly.com/badges/8afd3eec-b9a8-4d26-b5eb-cd6c15a3e790/public_url",
+                "image": "images/comptia_sec.png"
             }
+
         ]
     },
     "vm": {
         "title": "Virtual Machine",
         "articles": [
             {
-                "text": "<iframe width=\"100%\" height=\"100%\" src=\"http://localhost:5173/\" title=\"test\"></iframe>"
+                "text": "<iframe width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"http://nozickami.cz/\" title=\"VM\"></iframe>"
+            }
+        ]
+    },
+    "readme": {
+        "title": "README.txt",
+        "articles": [
+            {
+                "text": "<h1>Welcome to nozickami.cz</h1><h2>FAQ</h2><h3>What is the purpose of this website?</h3><p>The purpose of this website is to showcase my skills, experience, and especially my projects. The site serves as an online portfolio and business card.</p><h3>Who am I?</h3><p>I am Miroslav Nožička, a backend developer interested in game development, AI, cybersecurity, IoT, and 3D printing.</p><p>You can find more information in the respective sections. Creating the website and icons took some time, so I would appreciate if you take a look around :)</p>"
             }
         ]
     }

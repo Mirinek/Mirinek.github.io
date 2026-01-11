@@ -10,14 +10,15 @@
 			targetWindow.classList.remove('hidden');
 			targetWindow.classList.remove('closed-window');
 			targetWindow.classList.remove('minimized-window');
-			targetWindow.style.left = 'left: 0';
-			targetWindow.style.top = 'top: 0;';
+			targetWindow.style.animation = '';
+
 		}
-		// TODO create new element instead of showing existing one
+		
 		let minimizedButton = document.getElementById('minimized-' + windowId);
 		if (minimizedButton) {
 			minimizedButton.classList.remove('hidden');
 			minimizedButton.classList.remove('minimized-button-closed');
+			
 		}
 	}
 </script>

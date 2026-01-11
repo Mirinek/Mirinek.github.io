@@ -2,7 +2,8 @@
 	import ActionBar from './ActionBar.svelte';
 	export let title = '';
 	export let id = '';
-	export let articles = [{ title: '', text: '', image: '' }];
+	export let icon = '';
+	export let articles = [{ title: '', text: '', image: '', link: '' }];
 	let left = 0;
 	let top = 0;
 	let moving = false;
@@ -37,20 +38,22 @@
 </script>
 
 <dialog
-	class={"action-window hidden" + (id === 'readme' ? 'active-window' : '')}
+	class={'action-window window hidden' + (id === 'readme' ? 'active-window' : '')}
 	style:left="{left}px"
 	style:top="{top}px"
 	on:mousedown={updateActiveWindow}
 	{id}
 	tabindex="0"
 >
-	<ActionBar on:mousedown={onMouseDown}>{title}</ActionBar>
+	<ActionBar on:mousedown={onMouseDown}><img width="16px" src="{icon}" alt="{title}"> {title}</ActionBar>
 	<article class="content">
 		{#each articles as article}
-			<section>
-				<h2>{article.title}</h2>
+				<section style={article.title ? 'height: fit-content;' : ''}>
+				{#if article.title}
+					<h2><a href="{article.link}" target="_blank">{article.title}</a></h2>
+				{/if}
 				{#if article.image}
-					<img src={article.image} alt={article.title} width="25%" />
+					<a href="{article.link}" target="_blank"><img src={article.image} alt={article.title} width="25%" /></a>
 				{/if}
 				<p>{@html article.text}</p>
 			</section>
