@@ -95,7 +95,7 @@
         "title": "Virtuální počítač",
         "articles": [
             {
-                "text": "<iframe width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"http://nozickami.cz/\" title=\"VM\"></iframe>"
+                "text": "<iframe width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"https://nozickami.cz/\" title=\"VM\"></iframe>"
             }
         ]
     },
