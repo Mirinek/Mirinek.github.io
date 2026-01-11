@@ -1,0 +1,110 @@
+{
+    "contact": {
+        "title": "Kontakt",
+        "articles": [
+            {
+                "title": "O mně",
+                "text": "Jsem především backend vývojář se zájmem o techniku, kybernetickou bezpečnost, vývoj her a 3D tisk. Rád se učím nové technologie a neustále se snažím zlepšovat své dovednosti.<ul><li><b>Miroslav Nožička</b></li> <li>IČO: 14404826, neplátce DPH</li> <li>email: miroslav.nozicka@outlook.com</li> <li>Sídlo: Hornická 35, Staré Město 78832</li> <li>Podnikatel vedený u Živnostenského úřadu v Šumperku</li></ul>",
+                "image": "images/port.jpg"
+            },
+            {
+                "title": "Kontakt",
+                "text": "<ul><li>Email: <a href='mailto:miroslav.nozicka@outlook.com'>miroslav.nozicka@outlook.com</a></li><li><a href='https://www.linkedin.com/in/miroslav-nozicka-31584a199/' target=\"_blank\"> LinkedIn profil</a></li></ul>"
+            },
+            {
+                "title": "Sociální a jiné sítě",
+                "text": "<ul><li><a href='https://github.com/Mirinek' target=\"_blank\"> Github profil</a></li><li><a href='https://lowich.itch.io/' target=\"_blank\"> Itch.io profil</a></li><li><a href='https://www.printables.com/@Lowich_1199788' target=\"_blank\"> Printables profil</a></li></ul>"
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projekty",
+        "articles": [
+            {
+                "title": "Středisko Sněžník",
+                "text": "<p>Webové stránky skautského střediska Sněžník.</p>",
+                "image": "images/sneznik.png",
+                "link": "https://stredisko-sneznik.skauting.cz/"
+            },
+            {
+                "title": "Eligma",
+                "text": "<p>Webový šifrovací nástroj pro Skauty a jiné tvůrce.</p>",
+                "image": "images/eligma.png",
+                "link": "https://eligma.cz/"
+            },
+            {
+                "title": "StMS - 30",
+                "text": "<p> Webové stránky bunkru StMS - 30 ve Starém Městě.</p>",
+                "image": "images/stm30.png",
+                "link": "https://stms30.cz/"
+            },
+            {
+                "title": "3D modelování",
+                "text": "<iframe src=\"https://www.printables.com/embed/1346255\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/1048333\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/616997\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/573385\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe><iframe src=\"https://www.printables.com/embed/573200\" width=\"300\" height=\"340\" scrolling=\"no\" frameborder=\"0\"></iframe>...",
+                "link": "https://www.printables.com/@Lowich_1199788"
+            },
+            {
+                "title": "2D grafika/pixel art",
+                "text": "<iframe frameborder=\"0\" src=\"https://itch.io/embed/1839661\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-spaceship-sprites\" target=\"_blank\">Spaceship sprites by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/1866810\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-pixel-art-spaceship-sprites\" target=\"_blank\">Spaceship sprites by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/2007821\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/slime-platformer-tileset\" target=\"_blank\">Slime platformer tileset by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/4189814\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/misc-corporate-icons\">Misc corporate Icons by Lowich</a></iframe><iframe frameborder=\"0\" src=\"https://itch.io/embed/1852593\" width=\"552\" height=\"167\"><a href=\"https://lowich.itch.io/free-water-fowl-sprites\">Waterfowl sprites by Lowich</a></iframe>...",
+                "link": "https://lowich.itch.io/"
+            }
+        ]
+    },
+    "experience": {
+        "title": "Zkušenosti",
+        "articles": [
+            {
+                "title": "Senior backend developer - Geekcoders",
+                "text": "<ul><li>Práce na PHP, Python a Golang projetech, příležitostná Dev/Ops výpomoc</li> <li>Konfigurace a údržba serveru pro interní služby</li></ul>"
+            },
+            {
+                "title": "Backend developer - Mallgroup",
+                "text": "<ul><li>Správa a vývoj několika Golang micro service</li> <li>Optimalizace a přechod na asynchroní zpracování</li> <li>Monitoring, alerting a stabilizace služeb</li></ul>"
+            },
+            {
+                "title": "Backend developer -  Fameless",
+                "text": "<ul><li>Tvorba komplexního GraphQL API pro komunikaci s Pohodou</li> <li>Implementace Django aplikace s administrací a komunikací přes RabbitMQ</li> <li>Implementace programu pro koncová Windows zařízení se správou Windows služeb</li></ul>"
+            }
+        ]
+    },
+    "certs": {
+        "title": "Certifikace",
+        "articles": [
+            {
+                "title": "eJPT - INE",
+                "text": "",
+                "link": "https://certs.ine.com/b1f5384d-c5ca-446e-b323-679f45cb174a#acc.eWd1y3F0",
+                "image": "images/ejpt.png"
+            },
+            {
+                "title": "ICCA - INE",
+                "text": "",
+                "link": "https://certs.ine.com/27a8c3b4-6013-4ed6-a0f5-84123283c0cf#acc.NRDpOsI5",
+                "image": "images/icca.png"
+            },
+            {
+                "title": "Comptia Security+",
+                "text": "",
+                "link": "https://www.credly.com/badges/8afd3eec-b9a8-4d26-b5eb-cd6c15a3e790/public_url",
+                "image": "images/comptia_sec.png"
+            }
+
+        ]
+    },
+    "vm": {
+        "title": "Virtuální počítač",
+        "articles": [
+            {
+                "text": "<iframe width=\"100%\" height=\"100%\" loading=\"lazy\" src=\"http://nozickami.cz/\" title=\"VM\"></iframe>"
+            }
+        ]
+    },
+    "readme": {
+        "title": "README.txt",
+        "articles": [
+            {
+                "text": "<h1>Vítejte na stránkách nozickami.cz</h1><h2>FAQ</h2><h3>Co je cílem těchto stránek?</h3><p>Cílem těchto stránek je představit mé dovednosti, zkušenosti a předvším projekty. Stránky slouží jako online portfolio a vizitka.</p><h3>Kdo jsem?</h3><p>Jsem Miroslav Nožička, backend vývojář se zájmem o game development, AI, kyberbezpečnost, IoT a 3D tisk.</p><p>Více informací najdete v daných sekcích, tvorba webu a ikonek chvíli trvala, takže budu rád, když se tady rozhlédnete :)</p>"
+            }
+        ]
+    }
+}
