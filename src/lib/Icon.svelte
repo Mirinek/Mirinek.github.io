@@ -4,21 +4,23 @@
 	export let title: string = '';
 	export let windowId: string = '';
 
-	function spawnWindow() {
+	function spawnWindow(e?: Event) {
+		if (e && e.type === 'touchend') {
+			e.preventDefault();
+		}
+
 		let targetWindow = document.getElementById(windowId);
 		if (targetWindow) {
 			targetWindow.classList.remove('hidden');
 			targetWindow.classList.remove('closed-window');
 			targetWindow.classList.remove('minimized-window');
 			targetWindow.style.animation = '';
-
 		}
-		
+
 		let minimizedButton = document.getElementById('minimized-' + windowId);
 		if (minimizedButton) {
 			minimizedButton.classList.remove('hidden');
 			minimizedButton.classList.remove('minimized-button-closed');
-			
 		}
 	}
 </script>

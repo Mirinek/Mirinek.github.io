@@ -26,12 +26,14 @@
 		{
 			id: 'readme',
 			dskIco: 'images/readme_icon.png'
-		},
-		{
-			id: 'vm',
-			dskIco: 'images/pc_icon.png'
 		}
 	];
+	if (window.location === window.parent.location) {
+		content.push({
+			id: 'vm',
+			dskIco: 'images/pc_icon.png'
+		});
+	}
 
 	function drag_select(e: MouseEvent) {
 		if (
