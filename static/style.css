@@ -421,3 +421,12 @@ section:has(p>iframe) {
 #lang {
     color: var(--border-dark);
 }
+
+a {
+    color: var(--border-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5aa8b2;
+}
